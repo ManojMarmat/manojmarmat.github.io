@@ -290,7 +290,18 @@ a.active {
     background-size: cover;
     
 }
-
+.overlay {
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+    background: linear-gradient(to right, #0575E6, #00F260);
+    opacity: 0.7;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+}
 .table-cell {
     display: table-cell;
     vertical-align: middle;
