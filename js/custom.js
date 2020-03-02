@@ -1,5 +1,3 @@
-// JavaScript Document
-
 $(window).load(function () {
     "use strict";
     // makes sure the whole site is loaded
@@ -12,9 +10,7 @@ $(window).load(function () {
 
 $(document).ready(function () {
     "use strict";
-
-    // scroll menu
-    var sections = $('.section'),
+ var sections = $('.section'),
         nav = $('.navbar-fixed-top,footer'),
         nav_height = nav.outerHeight();
 
@@ -46,8 +42,6 @@ $(document).ready(function () {
         return false;
     });
 
-
-    // Menu opacity
     if ($(window).scrollTop() > 80) {
         $(".navbar-fixed-top").addClass("bg-nav");
     } else {
@@ -61,9 +55,6 @@ $(document).ready(function () {
         }
     });
 
-
-
-    // Parallax
     var parallax = function () {
         $(window).stellar();
     };
@@ -72,14 +63,12 @@ $(document).ready(function () {
         parallax();
     });
 
-    // AOS
     AOS.init({
         duration: 1200,
         once: true,
         disable: 'mobile'
     });
 
-    //  isotope
     $('#projects').waitForImages(function () {
         var $container = $('.portfolio_container');
         $container.isotope({
@@ -103,12 +92,8 @@ $(document).ready(function () {
 
     });
 
-    //animatedModal
     $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
 
-    // Contact Form 	
-
-    // validate contact form
     $(function () {
         $('#contact-form').validate({
             rules: {
